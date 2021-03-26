@@ -1,0 +1,7 @@
+snail/app/flutter/google/flutter/google/pay/BuildConfig.java
+ snail.app.flutter.google.flutter.google.pay.BuildConfig
+snail/app/flutter/google/pay/PaymentInfo.java
+ snail.app.flutter.google.pay.PaymentInfo
+snail/app/flutter/google/pay/FlutterGooglePayPlugin.java
+ snail.app.flutter.google.pay.FlutterGooglePayPlugin
+ snail.app.flutter.google.pay.FlutterGooglePayPlugin$1

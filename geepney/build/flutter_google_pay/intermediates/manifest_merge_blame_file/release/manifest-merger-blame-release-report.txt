@@ -1,0 +1,24 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="snail.app.flutter.google.flutter.google.pay" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->/home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml
+6
+7    <application>
+7-->/home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:5:5-14:19
+8        <meta-data
+8-->/home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:7:9-9:36
+9            android:name="com.google.android.gms.wallet.api.enabled"
+9-->/home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:8:13-69
+10            android:value="true" />
+10-->/home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:9:13-33
+11        <meta-data
+11-->/home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:11:9-13:69
+12            android:name="com.google.android.gms.version"
+12-->/home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:12:13-58
+13            android:value="@integer/google_play_services_version" />
+13-->/home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:13:13-66
+14    </application>
+15
+16</manifest>

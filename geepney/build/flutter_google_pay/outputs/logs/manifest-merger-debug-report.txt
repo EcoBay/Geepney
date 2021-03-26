@@ -1,0 +1,33 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:1:1-15:12
+INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:1:1-15:12
+INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:1:1-15:12
+	package
+		ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:3:5-58
+		INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml
+		INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:2:5-63
+application
+ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:5:5-14:19
+meta-data#com.google.android.gms.wallet.api.enabled
+ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:7:9-9:36
+	android:value
+		ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:9:13-33
+	android:name
+		ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:8:13-69
+meta-data#com.google.android.gms.version
+ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:11:9-13:69
+	android:value
+		ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:13:13-66
+	android:name
+		ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml:12:13-58
+uses-sdk
+INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml
+INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml
+		ADDED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml
+		INJECTED from /home/eco/.pub-cache/hosted/pub.dartlang.org/flutter_google_pay-0.1.4/android/src/main/AndroidManifest.xml

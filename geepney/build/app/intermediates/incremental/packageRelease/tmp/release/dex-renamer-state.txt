@@ -1,0 +1,4 @@
+#Fri Mar 26 21:30:21 PST 2021
+base.0=/mnt/hdd/eco/files/misc/Geepney/geepney/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
