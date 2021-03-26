@@ -4,7 +4,7 @@ Geepney is a hybrid contactless payment and turnstile system for eJeepneys. The 
 
 ## Installation (Tested only on Android 10 as of now)
 ### Prebuilt APK for Android 10
-#### 1) Clone Directory
+#### 1) Clone Repository
 ```
 git clone https://github.com/EcoBay/Geepney.git
 ```
@@ -23,12 +23,16 @@ Install prebuilt APK file `geepney/build/app/outputs/fluter-apk/apk-release.apk`
 #### 2) Install and Setup Flutter
 Folow Google's guide on [Installing Flutter](https://flutter.dev/docs/get-started/install)
 
-#### 3) Update flutter and Get Pub.dev dependencies
+#### 3) Clone Repository
+```
+git clone https://github.com/EcoBay/Geepney.git
+```
+#### 4) Update flutter and Get Pub.dev dependencies
 ```
 flutter upgrade && flutter pub get
 ```
 
-#### 4) Build and Install geepney
+#### 5) Build and Install geepney
 ```
 cd geepney
 flutter run --release
