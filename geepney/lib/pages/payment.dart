@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_google_pay/flutter_google_pay.dart';
 import 'package:geepney/locations.dart' as locations;
 
-void main() => runApp(MyApp());
+import 'package:geepney/components/appbar.dart';
 
-class MyApp extends StatefulWidget {
+class Payment extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _PaymentState createState() => _PaymentState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _PaymentState extends State<Payment> {
   BuildContext scaffoldContext;
 
   @override
@@ -26,13 +26,14 @@ class _MyAppState extends State<MyApp> {
       PaymentItem pm = PaymentItem(
           stripeToken: 'pk_test_1IV5H8NyhgGYOeK6vYV3Qw8f',
           stripeVersion: "2018-11-08",
-          currencyCode: "usd",
-          amount: "0.10",
+          currencyCode: "php",
+          amount: "42.0",
           gateway: 'stripe');
 
       FlutterGooglePay.makePayment(pm).then((Result result) {
         if (result.status == ResultStatus.SUCCESS) {
           _showToast(scaffoldContext, 'Success');
+          Navigator.pushNamed(context, '/disembark');
         }
       }).catchError((dynamic error) {
         _showToast(scaffoldContext, error.toString());
@@ -49,7 +50,7 @@ class _MyAppState extends State<MyApp> {
       ///docs https://developers.google.com/pay/api/android/guides/tutorial
       PaymentBuilder pb = PaymentBuilder()
         ..addGateway("example")
-        ..addTransactionInfo("1.0", "USD")
+        ..addTransactionInfo("1.0", "PHP")
         ..addAllowedCardAuthMethods(["PAN_ONLY", "CRYPTOGRAM_3DS"])
         ..addAllowedCardNetworks(
             ["MASTERCARD", "VISA"])
@@ -73,27 +74,33 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Plugin example app'),
-          ),
-          body: Builder(builder: (context) {
-            scaffoldContext = context;
-            return Center(
-                child: Column(
-              children: <Widget>[
-                FlatButton(
+    return Scaffold(
+      appBar: GeepneyAppBar("Trip summary"),
+      body: Builder(builder: (context) {
+        scaffoldContext = context;
+        return Center(
+          child: Column(
+            mainAxisAlignment : MainAxisAlignment.center,
+            children: <Widget>[
+              Column(
+                crossAxisAlignment : CrossAxisAlignment.start,
+                children : <Widget>[
+                  Text("Address 1 - Landmark 3", style : TextStyle(fontSize : 10)), 
+                  Text("49.00 Php", style : TextStyle(fontSize : 30)), 
+                  Text("XX Km - XX Php/Km", style : TextStyle(fontSize : 8)), 
+                ]
+              ),
+              SizedBox(height : 50),
+              Card(
+                child : InkWell( child : FlatButton(
                   onPressed: _makeStripePayment,
-                  child: Text(locations.list[0]['Location']),
-                ),
-                FlatButton(
-                  onPressed: _makeCustomPayment,
-                  child: Text('Custom pay'),
-                ),
-              ],
-            ));
-          })),
+                  child: Text('Pay'),
+                )),
+              ),
+            ],
+          )
+        );
+      })
     );
   }
 

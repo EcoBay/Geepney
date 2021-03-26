@@ -8,7 +8,6 @@ Widget GeepneyAppBar(String subtitle) {
           Text('Geepney',
               style : TextStyle(
               fontSize : 24.0, 
-              fontWeight : FontWeight.w600,
               fontFamily : 'Quiapo'
             )
           ),

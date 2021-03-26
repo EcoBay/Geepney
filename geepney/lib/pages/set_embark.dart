@@ -14,17 +14,22 @@ Widget EmbarkBody(){
     itemCount: locations.list.length,
     itemBuilder: (BuildContext context, int index) {  
       return Card(
-        child : ListTile(
-          leading : Container(
-            child: Icon(
-              locations.list[index]['IsLandmark'] ? Icons.location_city : Icons.place,
-              size : 40.0,
-              color : Colors.black
+        child : InkWell(
+          onTap : (){
+            Navigator.pushNamed(context, '/embark', arguments : locations.list[index]);
+          },
+          child : ListTile(
+            leading : Container(
+              child: Icon(
+                locations.list[index]['IsLandmark'] ? Icons.location_city : Icons.place,
+                size : 40.0,
+                color : Colors.green[400]
+              ),
+              height: 50,
             ),
-            height: 50,
-          ),
-          title: Text(locations.list[index]['Location']),
-          subtitle: Text(locations.list[index]['Address'])
+            title: Text(locations.list[index]['Location']),
+            subtitle: Text(locations.list[index]['Address'])
+          )
         )
       );
     }
