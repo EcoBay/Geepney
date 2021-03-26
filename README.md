@@ -31,5 +31,5 @@ flutter upgrade && flutter pub get
 #### 4) Build and Install geepney
 ```
 cd geepney
-flutter install
+flutter run --release
 ```
